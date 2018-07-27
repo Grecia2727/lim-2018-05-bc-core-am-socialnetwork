@@ -20,12 +20,12 @@ const confirPassword = document.getElementById('confirPassword')
 const validInputs = document.getElementById('valid-inputs');
 const validInputs2 = document.getElementById('valid-inputs2');
 
-formInicio.classList.remove('hidden');
-formRegister.classList.add('hidden');
+//formInicio.classList.remove('hidden');
+//formRegister.classList.add('hidden');
 
 registerLink.addEventListener('click', () => {
-  formInicio.classList.add('hidden');
   formRegister.classList.remove('hidden');
+  formInicio.classList.add('hidden');
 })
 
 
@@ -49,6 +49,7 @@ loginButton.addEventListener('click', () => {
   if (isValidLogin(emailLogin.value, passwordLogin.value)) {
     login(emailLogin.value, passwordLogin.value);
     validation();
+
   } else {
     validInputs2.innerHTML = 'email y/o pasword incorrecto';
   }

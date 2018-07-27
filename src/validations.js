@@ -7,7 +7,7 @@ const miniLenght = value => (value.length >=5);
 
 // const parameterRegister = (nameUser,email,password,confirPassword);
 
-console.log(isEmail);
+//console.log(isEmail);
 //  Valida los campos al Registrar Nuevo Usuario
 //  ******************************************** 
 const validationRegisterUser = (nameUser,email,password,confirPassword) => {
@@ -62,5 +62,5 @@ const validationUpdatePassword = (email) => {
 // Exportando funciones al Objeto Global windown
 window.isValidLogin = isValidLogin;
 window.validationRegisterUser = validationRegisterUser;
-window.validationPublicPost = validationPublicPost;
+//window.validationPublicPost = validationPublicPost;
 window.validationUpdatePassword = validationUpdatePassword;
