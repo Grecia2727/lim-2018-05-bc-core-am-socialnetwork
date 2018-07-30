@@ -26,7 +26,6 @@ const welcome = () => {
   firebase.database().ref('users/')
     .on('value', (userRef) => {
       const users = usersRef.val();
-      console.log(usersLogin);
     })
 }
 
